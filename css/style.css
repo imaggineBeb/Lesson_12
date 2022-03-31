@@ -1,0 +1,389 @@
+/* Обнуление */
+@import "null.css";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap");
+
+/* -------------------------------------------------------------------- */
+
+body {
+	background: rgb(215, 215, 215);
+	font-family: "Roboto";
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.container {
+}
+/* ---------------------------------HEADER------------------------------ */
+
+.car {
+}
+.car__container {
+	overflow: hidden;
+	margin: 40px auto;
+	max-width: 90%;
+	height: 900px;
+	box-sizing: border-box;
+	background: #34160e;
+	background: -moz-linear-gradient(top, #34160e 0%, #1e285a 0%, #7e5140 100%);
+	background: -webkit-linear-gradient(top, #34160e 0%, #1e285a 0%, #7e5140 100%);
+	background: linear-gradient(to bottom, #34160e 0%, #1e285a 0%, #7e5140 100%);
+
+	position: relative;
+}
+.car__body {
+	position: relative;
+	top: 50%;
+	margin: 0 auto;
+	width: 1000px;
+	height: 200px;
+	background: rgb(47, 45, 45);
+	background: linear-gradient(to right, rgb(47, 45, 45) 0%, rgb(47, 45, 45) 50%, rgb(47, 45, 45) 80%, #434343 100%);
+	border-radius: 0% 100% 0% 100% / 100% 100% 0% 0%;
+	z-index: 3;
+}
+
+.car__spoiler {
+	bottom: 190px;
+	right: 850px;
+	width: 400px;
+	height: 100px;
+	border-radius: 81% 19% 0% 100% / 100% 97% 3% 0%;
+	background: rgb(47, 45, 45) 0 0 no-repeat;
+	position: absolute;
+	z-index: 4;
+}
+.car__exhaust {
+	position: absolute;
+	transform: rotate(270deg);
+	bottom: 80px;
+	right: 940px;
+	width: 150px;
+	height: 30px;
+	background-color: rgb(59, 59, 59);
+	border-radius: 10% 10% 14% 9% / 34% 34% 0% 0%;
+}
+.car__window {
+	width: 300px;
+	height: 100px;
+	top: -40px;
+	right: 580px;
+	position: absolute;
+	transform: skew(4deg, 9deg);
+	background: rgb(47, 45, 45) 0 0 no-repeat;
+	border-top: 15px solid rgba(58, 60, 61, 0.66);
+}
+.car__windows-one {
+	top: 10px;
+	right: -150px;
+	position: relative;
+	background: #0eb9ff;
+	background: linear-gradient(135deg, #0eb9ff 0%, #1a6ea4 50%, #2381c5 100%);
+
+	width: 90px;
+	height: 30px;
+	transform: rotate(334deg) skew(-4deg, 25deg);
+}
+.car__windows-two {
+	top: -18px;
+	right: -40px;
+	position: relative;
+	background: #0eb9ff;
+	background: linear-gradient(135deg, #0eb9ff 0%, #1a6ea4 50%, #2381c5 100%);
+	width: 90px;
+	height: 30px;
+	transform: rotate(334deg) skew(-4deg, 25deg);
+}
+.car__windows-three {
+	top: -48px;
+	right: -40px;
+	position: relative;
+	background: rgb(108, 109, 110) 0 0 no-repeat;
+	width: 10px;
+	height: 60px;
+	transform: rotate(334deg) skew(-4deg, 25deg);
+}
+.car__windows-four {
+	top: -112px;
+	right: -250px;
+	position: relative;
+	background: rgb(108, 109, 110) 0 0 no-repeat;
+	width: 10px;
+	height: 60px;
+	transform: rotate(334deg) skew(-4deg, 25deg);
+}
+.car__windows-two {
+}
+.car__right-wheel {
+	z-index: 6;
+	position: relative;
+	border-radius: 50%;
+	width: 180px;
+	height: 180px;
+	background-color: rgb(78, 75, 75);
+	top: 320px;
+	left: 420px;
+}
+.car__right-wheel::before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	width: 140px;
+	height: 140px;
+	background-color: rgb(56, 54, 54);
+	top: 50%;
+	left: 50%;
+	border: 6px rgb(34, 34, 32) solid;
+	transform: translate(-50%, -50%);
+}
+.car__right-wheel::after {
+	content: "";
+	background: url("../img/batlogo.png") 50% / 60px no-repeat;
+	position: absolute;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: rgb(14, 2, 2);
+	top: 50%;
+	left: 50%;
+	border: 3px rgb(247, 251, 0) solid;
+	transform: translate(-50%, -50%);
+}
+
+.car__deepening-right {
+	z-index: 2;
+	position: absolute;
+	width: 220px;
+	height: 150px;
+	top: 500px;
+	left: 400px;
+	background-color: rgb(27, 27, 27);
+	border-top: 5px rgb(77, 76, 76) solid;
+	border-left: 5px rgb(77, 76, 76) solid;
+	border-right: 5px rgb(77, 76, 76) solid;
+	border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
+	z-index: 5;
+}
+/* -----------------------------Левое колесо------------------------------- */
+.car__left-wheel {
+	z-index: 6;
+	position: relative;
+	border-radius: 50%;
+	width: 140px;
+	height: 140px;
+	background-color: rgb(78, 75, 75);
+	top: 180px;
+	left: 1050px;
+}
+.car__left-wheel::before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: rgb(56, 54, 54);
+	top: 50%;
+	left: 50%;
+	border: 6px rgb(34, 34, 32) solid;
+	transform: translate(-50%, -50%);
+}
+.car__left-wheel::after {
+	content: "";
+	background: url("../img/batlogo.png") 50% / 35px no-repeat;
+	position: absolute;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	background-color: rgb(14, 2, 2);
+	top: 50%;
+	left: 50%;
+	border: 3px rgb(247, 251, 0) solid;
+	transform: translate(-50%, -50%);
+}
+.car__deepening-left {
+	z-index: 5;
+	position: absolute;
+	width: 180px;
+	height: 110px;
+	top: 540px;
+	left: 1030px;
+	border-top: 5px rgb(77, 76, 76) solid;
+	border-left: 5px rgb(77, 76, 76) solid;
+	border-right: 5px rgb(77, 76, 76) solid;
+	background-color: rgb(27, 27, 27);
+	border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
+}
+
+.car__moon {
+	box-shadow: -1px -1px 270px 92px rgb(251, 251, 251);
+	position: absolute;
+	top: -200px;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	background: url("../img/moon.png") 0 0 / 400px no-repeat;
+}
+
+.car__item1 {
+	position: relative;
+	top: 60px;
+	border-top: 5px rgb(87, 87, 87) solid;
+	border-right: 5px rgb(87, 87, 87) solid;
+	left: 210px;
+	width: 450px;
+	height: 100px;
+	background: rgb(47, 45, 45);
+	border-radius: 0% 100% 100% 0% / 100% 100% 0% 0%;
+}
+.car__item2 {
+	bottom: 190px;
+	right: 650px;
+	top: -60px;
+	left: -170px;
+	width: 300px;
+	height: 50px;
+	border-radius: 81% 19% 0% 100% / 100% 97% 3% 0%;
+	background: rgb(47, 45, 45) 0 0 no-repeat;
+	position: absolute;
+	z-index: 6;
+	border-top: 4px solid grey;
+	border-right: 4px solid grey;
+	border-left: 4px solid grey;
+}
+.car__item3 {
+	position: relative;
+	transform: rotate(90deg);
+	top: -30px;
+	left: 460px;
+	width: 5px;
+	height: 100px;
+	background-color: grey;
+}
+.car__item4 {
+	position: relative;
+	transform: rotate(90deg);
+	top: -105px;
+	left: 477px;
+	width: 5px;
+	height: 80px;
+	background-color: grey;
+}
+.car__item5 {
+	position: relative;
+	transform: rotate(90deg);
+	top: -160px;
+	left: 494px;
+	width: 5px;
+	height: 60px;
+	background-color: grey;
+}
+
+.car__img {
+	top: -350px;
+	left: 0;
+	z-index: 2;
+	position: relative;
+}
+.img1 {
+	width: 900px;
+}
+.img2 {
+	position: absolute;
+	left: 400px;
+	width: 900px;
+}
+.img3 {
+	left: 900px;
+	position: absolute;
+	width: 800px;
+}
+
+.img4 {
+	top: 20px;
+	left: 1100px;
+	position: absolute;
+	width: 800px;
+}
+.img5 {
+	transform: rotate(90deg);
+	height: 1750px;
+	left: 650px;
+	top: -270px;
+	position: absolute;
+	width: 400px;
+}
+.img6 {
+	transform: rotate(-90deg);
+	height: 625px;
+	left: 118px;
+	top: 70px;
+	position: absolute;
+	width: 200px;
+}
+.exhaust__item1 {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	
+	width: 3px;
+	height: 3px;
+	background: rgb(140, 138, 138);
+	border-radius: 50%;
+}
+.exhaust__item2 {
+	position: relative;
+	top: 8px;
+	left: 30px;
+	width: 5px;
+	height: 5px;
+	background: rgb(140, 138, 138);
+	border-radius: 50%;
+}
+.exhaust__item3 {
+	position: relative;
+	top: 3px;
+	left: 50px;
+	width: 5px;
+	height: 5px;
+	background: rgb(140, 138, 138);
+	border-radius: 50%;
+}
+.exhaust__item4 {
+	position: relative;
+	top: -2px;
+	left: 70px;
+	width: 5px;
+	height: 5px;
+	background: rgb(140, 138, 138);
+	border-radius: 50%;
+}
+.exhaust__item5 {
+	position: relative;
+	top: -7px;
+	left: 90px;
+	width: 5px;
+	height: 5px;
+background: rgb(140, 138, 138);
+	border-radius: 50%;
+}
+.exhaust__item6 {
+	position: relative;
+	top: -12px;
+	left: 110px;
+	width: 5px;
+	height: 5px;
+	background: rgb(140, 138, 138);
+	border-radius: 50%;
+}
+.exhaust__item7 {
+	position: relative;
+	top: -18px;
+	left: 130px;
+	width: 3px;
+	height: 3px;
+	background: rgb(140, 138, 138);
+	border-radius: 50%;
+}
